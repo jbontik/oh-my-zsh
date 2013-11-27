@@ -23,7 +23,6 @@ ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
 
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
 PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n\
 %{$fg[white]%}@\
 %{$fg[green]%}$(box_name) \
@@ -31,4 +30,4 @@ PROMPT="
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${git_info} \
 
-%{$terminfo[bold]$fg[green]%}$ %{$reset_color%}"
+%{$terminfo[bold]$fg[green]%}%# %{$reset_color%}"
