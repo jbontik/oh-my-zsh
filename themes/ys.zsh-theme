@@ -21,14 +21,21 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}x"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
 
+# carret color
+if [ "$(whoami)" = "root" ]; then CARETCOLOR="red"; else CARETCOLOR="green"; fi
+
+# using return code (= %? )
+local return_code="%(?..%{$fg_bold[red]%}:( %? %{$reset_color%})"
+
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
 PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n\
 %{$fg[white]%}@\
 %{$fg[green]%}$(box_name) \
 %{$fg[white]%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${git_info} \
- 
-%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
+
+%{$terminfo[bold]${fg[$CARETCOLOR]}%}%# %{${reset_color}${return_code}%}"
+
+
