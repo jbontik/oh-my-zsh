@@ -28,8 +28,7 @@ if [ "$(whoami)" = "root" ]; then CARETCOLOR="red"; else CARETCOLOR="green"; fi
 local return_code="%(?..%{$fg_bold[red]%}:( %? %{$reset_color%})"
 
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
-PROMPT="
-%{$fg[cyan]%}%n\
+PROMPT="%{$fg[cyan]%}%n\
 %{$fg[white]%}@\
 %{$fg[green]%}$(box_name) \
 %{$fg[white]%}in \
