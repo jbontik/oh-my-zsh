@@ -8,8 +8,8 @@ bindkey "^[[A" up-line-or-history
 bindkey "^[[B" down-line-or-history
 
 # make search up and down work, so partially type and hit up/down to find relevant stuff
-bindkey '^[[5~' up-line-or-search
-bindkey '^[[6~' down-line-or-search
+bindkey '^[[5~' history-beginning-search-backward #up-line-or-search
+bindkey '^[[6~' history-beginning-search-forward #down-line-or-search
 
 bindkey "^[[H" beginning-of-line
 bindkey "^[[1~" beginning-of-line
