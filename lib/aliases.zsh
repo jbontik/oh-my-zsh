@@ -24,3 +24,6 @@ alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
 
+# Mine
+alias tree='tree -C'
+alias cdh='cd $USERPROFILE'
