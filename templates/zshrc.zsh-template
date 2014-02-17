@@ -45,3 +45,13 @@ plugins=(git colored-man)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+#
+#
+# possible problems:
+# - compdef: unknown command or service: git
+# - to fix, run: 
+# compaudit | xargs chgrp Users
+# compaudit | xargs chmod g-w
+# rm -rf .zcompdump*
+# compinit
+# If it doesn't work, check this page: https://github.com/robbyrussell/oh-my-zsh/issues/630
