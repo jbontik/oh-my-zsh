@@ -12,7 +12,7 @@ function box_name {
 }
 
 # Directory info.
-local current_dir='${PWD/#$HOME/~}'
+local current_dir='%5~'
 
 # Git info.
 local git_info='$(git_prompt_info)'
