@@ -7,3 +7,5 @@ projects.zsh
 *.swp
 !custom/example.zshcache
 cache/
+__pycache__/
+*.pyc
