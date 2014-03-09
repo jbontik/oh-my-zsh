@@ -1,11 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/python
 
 # Copied from https://gist.github.com/seanh/5233082
 
 import os
 import os.path
 
-def shorten_path(path, max_length=20):
+def shorten_path(path, max_length=150):
     '''Return the given path, shortened if it's too long.
 
     Parent directories will be collapsed, fish-style. Examples:
@@ -60,5 +60,5 @@ def current_working_dir():
             raise
     return cwd
 
-if __name__ == '__main--':
+if __name__ == '__main__':
     print shorten_path(current_working_dir())
