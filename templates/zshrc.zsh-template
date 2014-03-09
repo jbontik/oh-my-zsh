@@ -44,6 +44,9 @@ plugins=(git colored-man)
 
 source $ZSH/oh-my-zsh.sh
 
+# use gist from https://gist.github.com/jbontik/9445738 to create ~/.pythonrc
+export PYTHONSTARTUP=~/.pythonrc
+
 # Customize to your needs...
 #
 #
