@@ -12,7 +12,7 @@ function box_name {
 }
 
 # Directory info.
-local current_dir='$(python $ZSH/custom/shorten_path.py)'
+local current_dir='$(python3 $ZSH/custom/shorten_path.py)'
 
 # Git info.
 local git_info='$(git_prompt_info)'

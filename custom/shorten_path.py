@@ -48,7 +48,7 @@ def current_working_dir():
     # <https://github.com/Lokaltog/powerline/>.
     try:
         try:
-            cwd = os.getcwdu()
+            cwd = os.getcwd()
         except AttributeError:
             cwd = os.getcwd()
     except OSError as e:
@@ -61,4 +61,4 @@ def current_working_dir():
     return cwd
 
 if __name__ == '__main__':
-    print shorten_path(current_working_dir())
+    print(shorten_path(current_working_dir()))
