@@ -5,7 +5,7 @@
 import os
 import os.path
 
-def shorten_path(path, max_length=150):
+def shorten_path(path, max_length=90):
     '''Return the given path, shortened if it's too long.
 
     Parent directories will be collapsed, fish-style. Examples:
