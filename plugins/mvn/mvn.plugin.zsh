@@ -1,4 +1,5 @@
 # mvn-color based on https://gist.github.com/1027800
+# with cygwin, needs ncurse package for tput to work
 export BOLD=`tput bold`
 export UNDERLINE_ON=`tput smul`
 export UNDERLINE_OFF=`tput rmul`
