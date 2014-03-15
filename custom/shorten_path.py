@@ -15,16 +15,17 @@ def shorten_path(path, max_length=90):
     /home/seanh/Projects/ckan/ckan-> ~/Projects/ckan/ckan
 
     '''
-    # Replace the user's homedir in path with ~
-    homedir = os.path.expanduser('~')
-    if path.startswith(homedir):
-        path = '~' + path[len(homedir):]
-
     parts = path.split(os.sep)
 
     # Remove empty strings.
     parts = [part for part in parts if part]
     path = os.sep.join(parts)
+    path = os.sep + path
+
+    # Replace the user's homedir in path with ~
+    homedir = os.path.expanduser('~')
+    if path.startswith(homedir):
+        path = '~' + path[len(homedir):]
 
     # Starting from the root dir, truncate each dir to just its first letter
     # until the full path is < max_length or all the dirs have already been
