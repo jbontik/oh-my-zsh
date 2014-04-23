@@ -54,7 +54,7 @@ export PYTHONSTARTUP=~/.pythonrc
 # - compdef: unknown command or service: git
 # - to fix, run: 
 # compaudit | xargs chgrp Users
-# compaudit | xargs chmod g-w
+# compaudit | xargs chmod og-wx
 # rm -rf .zcompdump*
 # compinit
 # If it doesn't work, check this page: https://github.com/robbyrussell/oh-my-zsh/issues/630
