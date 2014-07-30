@@ -27,3 +27,5 @@ alias afind='ack-grep -il'
 # Mine
 alias tree='tree -C'
 alias cdh='cd $USERPROFILE'
+export CODE=$USERPROFILE/code
+alias cdc='cd $CODE'
