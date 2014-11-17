@@ -68,8 +68,12 @@ bindkey '\C-x\C-e' edit-command-line
 
 #bindkey -e  ## emacs key bindings
 #
-#bindkey '^[[A' up-line-or-search
-#bindkey '^[[B' down-line-or-search
+#bindkey "^[[5~" up-line-or-history
+#bindkey "^[[6~" down-line-or-history
+bindkey '^[[5~' history-beginning-search-backward #up-line-or-search
+bindkey '^[[6~' history-beginning-search-forward #down-line-or-search
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 #bindkey '^[^[[C' emacs-forward-word
 #bindkey '^[^[[D' emacs-backward-word
 #
