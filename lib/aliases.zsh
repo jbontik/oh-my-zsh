@@ -38,3 +38,7 @@ alias tree='tree -C'
 alias cdh='cd $USERPROFILE'
 export CODE=$USERPROFILE/code
 alias cdc='cd $CODE'
+export SQLTRUNK=/cygdrive/c/svn/sql/trunk
+alias cds='cd $SQLTRUNK'
+alias svns='svn stat | replace_backslashes'
+alias svnu='svn up | replace_backslashes'
