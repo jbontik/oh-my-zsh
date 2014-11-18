@@ -89,3 +89,7 @@ export PYTHONSTARTUP=~/.pythonrc
 # rm -rf .zcompdump*
 # compinit
 # If it doesn't work, check this page: https://github.com/robbyrussell/oh-my-zsh/issues/630
+
+
+# See http://www.techques.com/question/15-6010/Colored-man-pages-not-working-on-gentoo
+export GROFF_NO_SGR=1
