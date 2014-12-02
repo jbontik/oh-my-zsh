@@ -77,3 +77,19 @@ function env_default() {
 function replace_backslashes() {
     tr '\\' '/'
 }
+
+function svnu() {
+    if [ $# -eq 0 ]; then
+        svn up . | replace_backslashes
+    else
+        svn up $(cygpath -w $1) | replace_backslashes
+    fi
+}
+
+function svns() {
+    if [ $# -eq 0 ]; then
+        svn st . | replace_backslashes
+    else
+        svn st $(cygpath -w $1) | replace_backslashes
+    fi
+}
