@@ -41,3 +41,6 @@ alias cdc='cd $CODE'
 export SQLTRUNK=/cygdrive/c/svn/sql/trunk
 alias cds='cd $SQLTRUNK'
 alias svnd='svn diff --diff-cmd "C:\Users\V621124\tools\svn_vimdiff.bat"'
+alias svnu='svn up'
+alias svns='svn st'
+alias snvu='svnu'
