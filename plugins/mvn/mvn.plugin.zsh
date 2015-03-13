@@ -61,6 +61,8 @@ alias mvntc='mvn tomcat:run'
 alias mvnjetty='mvn jetty:run'
 alias mvndt='mvn dependency:tree'
 alias mvns='mvn site'
+alias mvnsrc='mvn dependency:sources'
+alias mvndocs='mvn dependency:resolve -Dclassifier=javadoc'
 
 function listMavenCompletions { 
      reply=(
