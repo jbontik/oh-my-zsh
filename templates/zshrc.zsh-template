@@ -45,7 +45,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man pip)
+plugins=(git colored-man pip mvn)
 
 # User configuration
 
@@ -94,3 +94,7 @@ source $ZSH/oh-my-zsh.sh
 
 # See http://www.techques.com/question/15-6010/Colored-man-pages-not-working-on-gentoo
 export GROFF_NO_SGR=1
+
+alias cdh='cd $USERPROFILE'
+export CODE=$USERPROFILE/code
+alias cdc='cd $CODE'
