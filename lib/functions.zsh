@@ -74,3 +74,6 @@ function env_default() {
     export "$1=$2"       && return 3
 }
 
+function get_report_id() {
+    grep -ri $1 $SQLTRUNK/scripts/AP_COMMON --include='*.sql'
+}
