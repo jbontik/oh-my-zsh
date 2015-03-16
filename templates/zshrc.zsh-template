@@ -45,7 +45,9 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man pip mvn)
+plugins=(git colored-man pip python mercurial mvn)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -53,9 +55,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 # use gist from https://gist.github.com/jbontik/9445738 to create ~/.pythonrc
 export PYTHONSTARTUP=~/.pythonrc
-
-source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -95,6 +94,13 @@ source $ZSH/oh-my-zsh.sh
 # See http://www.techques.com/question/15-6010/Colored-man-pages-not-working-on-gentoo
 export GROFF_NO_SGR=1
 
-alias cdh='cd $USERPROFILE'
+source ~/.yartrc
+
+export SQLTRUNK=C:/svn/sql/trunk
 export CODE=$USERPROFILE/code
+alias cds='cd $SQLTRUNK'
+alias svnu='svn up'
+alias svns='svn st'
 alias cdc='cd $CODE'
+
+cds
