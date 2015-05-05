@@ -98,7 +98,6 @@ export PYTHONSTARTUP=~/.pythonrc
 # See http://www.techques.com/question/15-6010/Colored-man-pages-not-working-on-gentoo
 export GROFF_NO_SGR=1
 
-source ~/.yartrc
 
 export SQLTRUNK=C:/svn/sql/trunk
 export CODE=$USERPROFILE/code
@@ -107,4 +106,3 @@ alias svnu='svn up'
 alias svns='svn st'
 alias cdc='cd $CODE'
 
-cds
