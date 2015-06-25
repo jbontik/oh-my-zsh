@@ -78,6 +78,11 @@ function get_report_id() {
     grep -ri $1 $SQLTRUNK/scripts/AP_COMMON --include='*.sql'
 }
 
+function deploy_poms_list() {
+    grep -r"$1" 'credit.applets.version>\d*' c:/Users/V621124/code/Deploy_Applets --include='pom.xml'
+}
+
 function deploy_version_set() {
-grep -lr 'credit.applets.version>\d*' c:/Users/V621124/code/Deploy_Applets --include='pom.xml' | xargs sed -i 's/credit.applets.version>.*<\/credit.applets/credit.applets.version>'"$1"'<\/credit.applets/g'
+    deploy_poms_list l | xargs sed -i 's/credit.applets.version>.*<\/credit.applets/credit.applets.version>'"$1"'<\/credit.applets/g'
+    deploy_poms_list
 }
