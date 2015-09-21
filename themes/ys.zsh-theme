@@ -13,7 +13,7 @@ function box_name {
 
 # Directory info.
 local current_dir='$(python3 $ZSH/custom/shorten_path.py)'
-
+local current_dir='${PWD/#$HOME/~}'
 # VCS
 YS_VCS_PROMPT_PREFIX1=" %{$fg[white]%}on%{$reset_color%} "
 YS_VCS_PROMPT_PREFIX2=":%{$fg[cyan]%}"
