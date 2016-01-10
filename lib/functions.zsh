@@ -110,7 +110,7 @@ function deploy_poms_list() {
 function deploy_version_set() {
     deploy_poms_list l | xargs sed -i 's/credit.applets.version>.*<\/credit.applets/credit.applets.version>'"$1"'<\/credit.applets/g'
     deploy_poms_list
-
+}
 # Required for $langinfo
 zmodload zsh/langinfo
 
